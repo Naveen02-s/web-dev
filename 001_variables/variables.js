@@ -1,4 +1,4 @@
-let name = "Falana";
+const name = "Falana";
 let email = "falana@gmail.com";
 let city = "Raipur";
 
