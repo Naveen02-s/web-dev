@@ -5,4 +5,8 @@ const myDate = new Date()
 // console.log(myDate.toLocaleString());
 // console.log(myDate.toLocaleDateString());
 
-console.log(typeof myDate);
+// console.log(typeof myDate);
+
+console.log(myDate.toLocaleString('default', {
+    weekday: 'long',
+}));
