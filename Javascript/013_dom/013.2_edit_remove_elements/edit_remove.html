@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .listItem {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: grey; color:white">
+    <ul class="language">
+        <li class="listItem">Javascript</li>
+    </ul>
+</body>
+<script>
+    const ul = document.querySelector('ul')
+    function addLang(langName) {
+        const li = document.createElement('li')
+        const textNode = document.createTextNode(langName)
+        li.className = "listItem"
+        li.appendChild(textNode)
+        ul.appendChild(li)
+    }
+    addLang("Java")
+</script>
+</html>

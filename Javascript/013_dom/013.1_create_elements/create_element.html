@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: grey; color:white">
+    <div>Some Shii..!</div>
+</body>
+<script>
+    const cont = document.querySelector("div")
+    console.log(cont);
+
+    const cont2 = document.createElement("div")
+    cont2.className = "class"
+    cont2.id = 3
+    cont2.style.backgroundColor = "green"
+    cont2.innerText = "Some more shii..!"
+
+    document.body.appendChild(cont2)
+    
+</script>
+</html>
